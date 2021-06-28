@@ -4,17 +4,14 @@ import 'package:flutter/material.dart';
 class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromRGBO(25, 37, 46, 1),
-        appBar: AppBar(
-          title: Text('DSC Chuka University'),
-          leading: Icon(Icons.menu),
-        ),
+        //backgroundColor: Color.fromRGBO(25, 37, 46, 1),
+        backgroundColor: Colors.black,
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ImageHeader(
-                title: 'About Us',
+                title: 'Home',
                 imageUrl: 'assets/images/Chuka.png',
               ),
               SizedBox(height: 30.0),
@@ -60,6 +57,7 @@ class MyHomePage extends StatelessWidget {
                             color: Colors.black,
                             fontWeight: FontWeight.w500,
                           ),
+                          textAlign: TextAlign.justify,
                         ),
                         Text(
                           'Our Mission',
@@ -77,6 +75,7 @@ class MyHomePage extends StatelessWidget {
                             color: Colors.black,
                             fontWeight: FontWeight.w500,
                           ),
+                          textAlign: TextAlign.justify,
                         ),
                       ],
                     ),

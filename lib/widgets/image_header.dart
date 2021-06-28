@@ -12,8 +12,11 @@ class ImageHeader extends StatelessWidget {
       children: [
         Container(
           width: double.infinity,
-          height: 240,
+          height: 200,
           decoration: BoxDecoration(
+            color: Colors.black,
+            border: Border.all(width: 8, color: Colors.black),
+            borderRadius: BorderRadius.circular(12),
             image: DecorationImage(
               fit: BoxFit.cover,
               image: AssetImage(imageUrl),
@@ -23,7 +26,6 @@ class ImageHeader extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(
             horizontal: 24.0,
-            // vertical: 37.0,
             vertical: 20.0,
           ),
         ),

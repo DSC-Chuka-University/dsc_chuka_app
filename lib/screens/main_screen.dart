@@ -23,6 +23,11 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('DSC Chuka University'),
+        backgroundColor: Colors.blue,
+        leading: Icon(Icons.menu),
+      ),
       body: pageList[pageIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageIndex,
