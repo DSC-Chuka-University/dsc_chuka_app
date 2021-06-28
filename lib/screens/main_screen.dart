@@ -25,11 +25,12 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('DSC Chuka University'),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         leading: Icon(Icons.menu),
       ),
       body: pageList[pageIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         currentIndex: pageIndex,
         onTap: (value) {
           setState(() {
