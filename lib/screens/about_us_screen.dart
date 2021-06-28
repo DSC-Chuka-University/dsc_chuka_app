@@ -8,7 +8,8 @@ class AboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     //final height = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Color.fromRGBO(25, 37, 46, 1),
+      //backgroundColor: Color.fromRGBO(25, 37, 46, 1),
+      backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
