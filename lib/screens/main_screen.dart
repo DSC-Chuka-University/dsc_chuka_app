@@ -41,7 +41,7 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.event), label: 'Events'),
           BottomNavigationBarItem(icon: Icon(Icons.group), label: 'Our Team'),
-          BottomNavigationBarItem(icon: Icon(Icons.people), label: 'About Us'),
+          BottomNavigationBarItem(icon: Icon(Icons.info), label: 'About Us'),
         ],
       ),
     );
