@@ -16,7 +16,7 @@ class ImageHeader extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.black,
             border: Border.all(width: 8, color: Colors.black),
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(20),
             image: DecorationImage(
               fit: BoxFit.cover,
               image: AssetImage(imageUrl),
