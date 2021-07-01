@@ -1,3 +1,4 @@
+import 'package:dsc_chuka/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class NavDrawer extends StatelessWidget {
@@ -13,35 +14,45 @@ class NavDrawer extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),
             decoration: BoxDecoration(
-                color: Colors.green,
+                color: Colors.blue,
                 image: DecorationImage(
-                    fit: BoxFit.fill,
+                    fit: BoxFit.cover,
                     image: AssetImage('assets/images/Chuka.png'))),
           ),
           ListTile(
-            leading: Icon(Icons.input),
-            title: Text('Welcome'),
+            leading: Icon(Icons.home),
+            title: Text('Home'),
+            onTap: () => {MyHomePage()},
+          ),
+          ListTile(
+            leading: Icon(Icons.event),
+            title: Text('Events'),
             onTap: () => {},
           ),
           ListTile(
-            leading: Icon(Icons.verified_user),
-            title: Text('Profile'),
-            onTap: () => {Navigator.of(context).pop()},
+            leading: Icon(Icons.people),
+            title: Text('Our Team'),
+            onTap: () => {},
+          ),
+          ListTile(
+            leading: Icon(Icons.cast_for_education_rounded),
+            title: Text('Learn'),
+            onTap: () => {},
+          ),
+          ListTile(
+            leading: Icon(Icons.notification_add_outlined),
+            title: Text('Notifications'),
+            onTap: () => {},
+          ),
+          ListTile(
+            leading: Icon(Icons.info),
+            title: Text('About Us'),
+            onTap: () => {},
           ),
           ListTile(
             leading: Icon(Icons.settings),
             title: Text('Settings'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
-            onTap: () => {Navigator.of(context).pop()},
-          ),
-          ListTile(
-            leading: Icon(Icons.exit_to_app),
-            title: Text('Logout'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () => {},
           ),
         ],
       ),
