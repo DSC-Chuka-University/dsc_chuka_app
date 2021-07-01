@@ -2,6 +2,7 @@ import 'package:dsc_chuka/screens/about_us_screen.dart';
 import 'package:dsc_chuka/screens/events_screen.dart';
 import 'package:dsc_chuka/screens/home_screen.dart';
 import 'package:dsc_chuka/screens/team_screen.dart';
+import 'package:dsc_chuka/widgets/sidebar_menu.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -23,10 +24,11 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavDrawer(),
       appBar: AppBar(
         title: Text('DSC Chuka University'),
         backgroundColor: Colors.black,
-        leading: Icon(Icons.menu),
+        //leading: Icon(Icons.menu),
       ),
       body: pageList[pageIndex],
       bottomNavigationBar: BottomNavigationBar(

@@ -18,6 +18,17 @@ class AboutPage extends StatelessWidget {
               title: 'About Us',
               imageUrl: 'assets/images/Chuka.png',
             ),
+            Container(
+              child: Text(
+                'About DSC Chuka University',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28,
+                    color: Colors.white),
+              ),
+              height: 50,
+            ),
             SizedBox(height: 30.0),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 23.0),
